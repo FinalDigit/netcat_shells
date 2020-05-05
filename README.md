@@ -44,9 +44,9 @@ Python Method:<br>
 #Once are connected to the remote host issue the following<br>
 python -c 'import pty; pty.spawn("/bin/bash")'
 
-Alternate Method:
-ctrl+z to put current session in background
-ssty raw -echo
-fg
-reset
-xterm
+Alternate Method:<br>
+ctrl+z to put current session in background;
+ssty raw -echo;
+fg;
+reset;
+xterm;

